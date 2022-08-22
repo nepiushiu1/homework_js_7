@@ -8,7 +8,8 @@ const gallery = document.querySelector(".gallery");
 const newElements = galleryItems
   .map(
     (value) =>
-      `<div class="gallery__item">
+      `
+      <li class="gallery__item">
   <a class="gallery__link" href="${value.original}">
      <img
        class="gallery__image"
@@ -16,7 +17,8 @@ const newElements = galleryItems
        alt="${value.description}"
      />
    </a>
- </div>`
+ </li>
+ `
   )
   .join("");
 

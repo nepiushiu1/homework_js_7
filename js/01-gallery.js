@@ -38,6 +38,8 @@ function modalWindow(event) {
   function closeKeyboard(e) {
     if (e.key === "Escape") {
       instance.close();
+      window.removeEventListener("keydown",closeKeyboard);
     }
   }
 }
+
